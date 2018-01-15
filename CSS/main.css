@@ -1,6 +1,7 @@
 /* Header Rules */
 
 header {
+	padding-top: 50px;
 	background: linear-gradient(to top, #e6e6e6, white);
 }
 nav a {
@@ -25,6 +26,7 @@ section {
 
 #slideShow {
 	height: 825px;
+	margin-top: 50px;
 	display: block;
 	padding: 0px;
 }
@@ -162,7 +164,7 @@ h4 {
 	background-image: url("../Files/5.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-radius: 50%;
+	border-radius: 50%;	
 }
 .bubbles {
 	position: absolute;
