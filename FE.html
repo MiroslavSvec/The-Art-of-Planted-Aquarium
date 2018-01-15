@@ -140,8 +140,8 @@
 							<a style="background-image:url(Files/33.jpg); width: 100%;" href="">Halo</a>
 						</div>
 
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides2(1)">&#10095;</a>
 
 					</div>
 					<hr>
@@ -237,7 +237,7 @@
 			}
 			slides[slideIndex - 1].style.display = "block";
 			dots[slideIndex - 1].className += " active";
-			setTimeout(autoSlides, 5000); // Change image every x seconds
+			setTimeout(autoSlides, 3000); // Change image every x seconds
 		}
 
 		/* Next and previouse button function */
@@ -273,6 +273,35 @@
 			slides[slideIndex - 1].style.display = "block";
 			dots[slideIndex - 1].className += " active";
 		}
+
+		/* Shop Slide show */
+
+		var shopSlideIndex = 1;
+			showSlides2(shopSlideIndex);
+
+
+			function plusSlides2(x) {
+				showSlides2((shopSlideIndex += x));
+			}
+
+			function currentSlide2(x) {
+				showSlides2((shopSlideIndex = x));
+			}
+
+			function showSlides2(x) {
+				var i;
+				var shopSlides = document.getElementsByClassName("bigShop");
+				if (x > shopSlides.length) {
+					shopSlideIndex = 1;
+				}
+				if (x < 1) {
+					shopSlideIndex = shopSlides.length;
+				}
+				for (i = 0; i < shopSlides.length; i++) {
+					shopSlides[i].style.display = "none";
+				}
+				shopSlides[shopSlideIndex - 1].style.display = "block";
+			}
 	</script>
 </body>
 

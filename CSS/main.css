@@ -206,10 +206,14 @@ h4 {
 	margin: auto;
 	width: 100%;
 }
+#bigShopWrapper a {
+	color: #000000;
+}
 .bigShop {
 	display: none;
 }
 .bigShop a {
+	opacity: 1;
 	position: relative;
 	display: block;
 	width: 100%;
