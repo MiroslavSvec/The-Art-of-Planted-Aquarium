@@ -1,0 +1,205 @@
+/* Header Rules */
+
+header {
+	background: linear-gradient(to top, #e6e6e6, white);
+}
+nav a {
+	padding-left: 30px;
+}
+
+/* Section Rules */
+
+section {
+	height: auto;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.p {
+	margin: auto;
+	width: 40%;
+}
+
+/* Slideshow */
+
+#slideShow {
+	height: 825px;
+	display: block;
+	padding: 0px;
+}
+.slideshow-container {
+	position: relative;
+	margin: auto;
+}
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 100px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.text {
+		font-size: 11px;
+	}
+}
+
+/* Introduction section */
+
+#introduction,
+#inWrapper {
+	width: 100%;
+}
+#inWrapper {
+	padding: 0 20px;
+}
+#inWrapper p {
+	padding: 20px 0;
+}
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.grid li {
+	height: 350px;
+	padding: 20px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 10px 10px 10px #a6a6a6;
+}
+.grid li.small {
+	flex-basis: 30%;
+}
+.grid li.large {
+	flex-basis: 70%;
+}
+
+/* Equipment Rules */
+
+#bubblesImage {
+	margin-top: 50px;
+	width: 100%;
+	height: 750px;
+	background-image: url("../Files/5.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bubbles {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background-image: url("../Files/bubble.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+#CO2 {
+	margin-top: 200px;
+	left: 20%;
+}
+h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Footer Rules */
+
+footer {
+	height: auto;
+	justify-content: space-between;
+	background-color: #000000;
+	color: white;
+}
+.footerDiv {
+	padding: 50px;
+	flex-basis: 30%;
+	height: 50%;
+	flex-direction: column;
+}
+h5 {
+	margin-bottom: 25px;
+	font-size: 1.25em;
+}
+.footerLinks li {
+	padding-bottom: 10px;
+}
+.footerLinks a li {
+	color: white;
+}
+#footerHR {
+	width: 100%;
+}
+
+/* NOT IN USE *
+
+div {
+	border: 5px solid black;
+}
