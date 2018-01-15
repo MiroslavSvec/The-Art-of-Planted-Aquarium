@@ -65,7 +65,7 @@
 				<span class="dot"></span>
 				<span class="dot"></span>
 			</div>
-			<p> </p>
+
 		</section>
 
 		<div id="contentWrapper">
@@ -73,7 +73,7 @@
 			<!-- Why to have planted aquarium? -->
 
 			<section id="introduction">
-				<div id="inWrapper">
+				<div id="introductionWrapper">
 					<h3>Benefits </h3>
 					<hr>
 					<div class="p">
@@ -94,7 +94,7 @@
 			<!-- Equipment section -->
 
 			<section id="equipment">
-				<div id="eqWrapper">
+				<div id="equipmentWrapper">
 					<h3>Equipment</h3>
 					<hr>
 					<div class="p">
@@ -104,23 +104,15 @@
 					<br>
 					<div id="bubblesImage">
 
-						<div id="CO2" class="bubbles">
-							<a href="">
-								<h4>Co2</h4>
-							</a>
-						</div>
-
-						<div id="nutrision" class="bubbles">
-							<a href="">
-								<h4>Nutrision</h4>
-							</a>
-						</div>
-
-						<div id="light" class="bubbles">
-							<a href="">
-								<h4>Light</h4>
-							</a>
-						</div>
+						<a id="CO2" class="bubbles" href="">
+							<h4>Co2</h4>
+						</a>
+						<a id="nutrision" class="bubbles" href="">
+							<h4>Nutrision</h4>
+						</a>
+						<a id="light" class="bubbles" href="">
+							<h4>Light</h4>
+						</a>
 
 					</div>
 				</div>
@@ -129,11 +121,38 @@
 			<!-- Shop section -->
 
 			<section id="shop">
-				<h3>Shop with us</h3>
-				<hr>
-				<div class="p">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae
-						ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
+				<div id="shopWrapper">
+					<h3>Shop with us</h3>
+					<hr>
+					<div class="p">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae
+							ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
+					</div>
+					<br>
+					<div id="bigShopWrapper">
+						<div class="bigShop">
+							<a style="background-image:url(Files/11.jpg);" href="">Halo</a>
+						</div>
+						<div class="bigShop">
+							<a style="background-image:url(Files/22.jpg);" href="">Halo</a>
+						</div>
+						<div class="bigShop">
+							<a style="background-image:url(Files/33.jpg); width: 100%;" href="">Halo</a>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+					<hr>
+					<div id="smallShop">
+						<a href="">Halo</a>
+						<a href="">Halo</a>
+						<a href="">Halo</a>
+						<a href="">Halo</a>
+						<a href="">Halo</a>
+						<a href="">Halo</a>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -200,9 +219,9 @@
 		/* Slideshow function */
 
 		var slideIndex = 0;
-		showSlides();
+		autoSlides();
 
-		function showSlides(n) {
+		function autoSlides(n) {
 			var i;
 			var slides = document.getElementsByClassName("mySlides");
 			var dots = document.getElementsByClassName("dot");
@@ -218,7 +237,7 @@
 			}
 			slides[slideIndex - 1].style.display = "block";
 			dots[slideIndex - 1].className += " active";
-			setTimeout(showSlides, 5000); // Change image every x seconds
+			setTimeout(autoSlides, 5000); // Change image every x seconds
 		}
 
 		/* Next and previouse button function */

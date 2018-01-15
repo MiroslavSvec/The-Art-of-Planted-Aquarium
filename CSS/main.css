@@ -10,19 +10,13 @@ nav a {
 
 /* Section Rules */
 
-section {
-	height: auto;
-	margin-bottom: 100px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 .p {
+	padding-top: 20px;
 	margin: auto;
 	width: 40%;
 }
 
-/* Slideshow */
+/* Slideshow */ /* From W3schools */
 
 #slideShow {
 	height: 825px;
@@ -33,6 +27,13 @@ section {
 .slideshow-container {
 	position: relative;
 	margin: auto;
+}
+.mySlides {
+	display: none;
+}
+img {
+	vertical-align: middle;
+	height: 720px;
 }
 .prev,
 .next {
@@ -113,10 +114,8 @@ section {
 /* Introduction section */
 
 #introduction,
-#inWrapper {
+#introductionWrapper {
 	width: 100%;
-}
-#inWrapper {
 	padding: 0 20px;
 }
 #inWrapper p {
@@ -128,6 +127,7 @@ section {
 	justify-content: center;
 }
 .grid li {
+	margin-top: 20px;
 	height: 350px;
 	padding: 20px;
 	background-clip: content-box;
@@ -144,17 +144,9 @@ section {
 
 /* Equipment section */
 
-#eqWrapper {
+#equipmentWrapper {
 	width: 100%;
 	padding: 0 20px;
-}
-h4 {
-	position: absolute;
-	color: rgb(0, 0, 214);
-	font-size: 3.5em;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 #bubblesImage {
 	position: relative;
@@ -165,6 +157,14 @@ h4 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 50%;	
+}
+h4 {
+	position: absolute;
+	color: rgb(0, 0, 214);
+	font-size: 3.5em;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .bubbles {
 	position: absolute;
@@ -191,6 +191,48 @@ h4 {
 #light h4 {
 	color: rgb(189, 202, 0);
 }
+
+/* Shop section */
+
+#shop {
+	height: 1300px;
+}
+#shopWrapper {
+	width: 100%;
+	padding: 0 20px;
+}
+#bigShopWrapper {
+	position: relative;
+	margin: auto;
+	width: 100%;
+}
+.bigShop {
+	display: none;
+}
+.bigShop a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 700px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+} 
+#smallShop {
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+}
+#smallShop {
+	height: 200px;
+}
+#smallShop a {
+	flex-basis: 30%;
+	padding: 50px;
+}
+
 
 
 /* Footer Rules */
@@ -223,6 +265,7 @@ h5 {
 
 /* NOT IN USE *
 
-div {
+div, a {
 	border: 5px solid black;
 }
+
