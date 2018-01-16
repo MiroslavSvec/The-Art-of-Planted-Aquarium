@@ -30,25 +30,21 @@
 			<div class="slideshow-container">
 
 				<div class="mySlides fade">
-					<div class="numbertext">1 / 4</div>
 					<img src="Files/1.jpg" style="width:100%">
 					<div class="text">Caption Text</div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="numbertext">2 / 4</div>
 					<img src="Files/2.jpg" style="width:100%">
 					<div class="text">Caption Two</div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="numbertext">3 / 4</div>
 					<img src="Files/3.jpg" style="width:100%">
 					<div class="text">Caption Three</div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="numbertext">4 / 4</div>
 					<img src="Files/4.jpg" style="width:100%">
 					<div class="text">Caption 4</div>
 				</div>
@@ -133,24 +129,24 @@
 						<div class="bigShop">
 							<div>
 								<h5>Pro-Elite Series</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae ipsa
-									laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae
+									ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
 							</div>
 							<a style="background-image:url(Files/11.jpg);" href=""></a>
 						</div>
 						<div id="aligLeft" class="bigShop">
 							<div>
 								<h5>Pro-Elite Series</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae ipsa
-									laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae
+									ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
 							</div>
 							<a style="background-image:url(Files/22.jpg);" href=""></a>
 						</div>
 						<div class="bigShop">
 							<div>
 								<h5>Pro-Elite Series</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae ipsa
-									laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae
+									ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
 							</div>
 							<a style="background-image:url(Files/33.jpg); width: 100%;" href=""></a>
 						</div>
@@ -256,27 +252,27 @@
 
 		/* Next and previouse button function */
 
-		var slideIndex = 1;
-		showSlides1(slideIndex);
+		var dotIndex = 1;
+		showSlides(dotIndex);
 
 
 		function plusSlides(n) {
-			showSlides1((slideIndex += n));
+			showSlides((dotIndex += n));
 		}
 
 		function currentSlide(n) {
-			showSlides1((slideIndex = n));
+			showSlides((dotIndex = n));
 		}
 
-		function showSlides1(n) {
+		function showSlides(n) {
 			var i;
 			var slides = document.getElementsByClassName("mySlides");
 			var dots = document.getElementsByClassName("dot");
 			if (n > slides.length) {
-				slideIndex = 1;
+				dotIndex = 1;
 			}
 			if (n < 1) {
-				slideIndex = slides.length;
+				dotIndex = slides.length;
 			}
 			for (i = 0; i < slides.length; i++) {
 				slides[i].style.display = "none";
@@ -284,8 +280,8 @@
 			for (i = 0; i < dots.length; i++) {
 				dots[i].className = dots[i].className.replace(" active", "");
 			}
-			slides[slideIndex - 1].style.display = "block";
-			dots[slideIndex - 1].className += " active";
+			slides[dotIndex - 1].style.display = "block";
+			dots[dotIndex - 1].className += " active";
 		}
 
 		/* Shop Slide show */
