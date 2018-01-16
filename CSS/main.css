@@ -51,16 +51,6 @@ img {
 }
 .next {
 	right: 0;
-	border-radius: 3px 0 0 3px;
-}
-.text {
-	color: #f2f2f2;
-	font-size: 15px;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	width: 100%;
-	text-align: center;
 }
 .dot {
 	height: 15px;
@@ -96,11 +86,6 @@ img {
 	}
 	to {
 		opacity: 1;
-	}
-}
-@media only screen and (max-width: 300px) {
-	.text {
-		font-size: 11px;
 	}
 }
 
@@ -188,11 +173,12 @@ h4 {
 /* Shop section */
 #shop {
 	height: 1100px;
+	width: 100%;
+	padding: 0 20px;
 }
 #shopWrapper {
 	width: 100%;
 	height: 100%;
-	padding: 0 20px;
 }
 #bigShopWrapper {
 	position: relative;
