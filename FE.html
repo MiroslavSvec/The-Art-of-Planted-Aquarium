@@ -131,27 +131,41 @@
 					<br>
 					<div id="bigShopWrapper">
 						<div class="bigShop">
-							<a style="background-image:url(Files/11.jpg);" href="">Halo</a>
+							<div>
+								<h5>Pro-Elite Series</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae ipsa
+									laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
+							</div>
+							<a style="background-image:url(Files/11.jpg);" href=""></a>
+						</div>
+						<div id="aligLeft" class="bigShop">
+							<div>
+								<h5>Pro-Elite Series</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae ipsa
+									laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
+							</div>
+							<a style="background-image:url(Files/22.jpg);" href=""></a>
 						</div>
 						<div class="bigShop">
-							<a style="background-image:url(Files/22.jpg);" href="">Halo</a>
-						</div>
-						<div class="bigShop">
-							<a style="background-image:url(Files/33.jpg); width: 100%;" href="">Halo</a>
+							<div>
+								<h5>Pro-Elite Series</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. esse cumque unde, explicabo totam, in sequi iste recusandae ipsa
+									laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas</p>
+							</div>
+							<a style="background-image:url(Files/33.jpg); width: 100%;" href=""></a>
 						</div>
 
 						<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
 						<a class="next" onclick="plusSlides2(1)">&#10095;</a>
 
 					</div>
-					<hr>
+
 					<div id="smallShop">
-						<a href="">Halo</a>
-						<a href="">Halo</a>
-						<a href="">Halo</a>
-						<a href="">Halo</a>
-						<a href="">Halo</a>
-						<a href="">Halo</a>
+						<a href="" style="background-image: url(Files/111.jpg);"></a>
+						<a style="background-image: url(Files/222.jpg);" href=""></a>
+						<a style="background-image: url(Files/333.jpg);" href=""></a>
+						<a style="background-image: url(Files/444.jpg);" href=""></a>
+						<a style="background-image: url(Files/555.jpg);" href=""></a>
 					</div>
 				</div>
 			</section>
@@ -161,7 +175,7 @@
 	<hr id="footerHR">
 	<footer>
 		<div class="footerDiv">
-			<h5>Legal</h5>
+			<h6>Legal</h6>
 			<ul class="footerLinks">
 				<a href="">
 					<li>Privacy Police</li>
@@ -180,7 +194,7 @@
 				</a>
 		</div>
 		<div class="footerDiv">
-			<h5>Help</h5>
+			<h6>Help</h6>
 			<ul class="footerLinks">
 				<a href="">
 					<li>Track Order</li>
@@ -197,7 +211,7 @@
 			</ul>
 		</div>
 		<div class="footerDiv">
-			<h5>Follow Us</h5>
+			<h6>Follow Us</h6>
 			<ul class="footerLinks">
 				<a href="">
 					<li>Lorem ipsum</li>
@@ -277,31 +291,31 @@
 		/* Shop Slide show */
 
 		var shopSlideIndex = 1;
-			showSlides2(shopSlideIndex);
+		showSlides2(shopSlideIndex);
 
 
-			function plusSlides2(x) {
-				showSlides2((shopSlideIndex += x));
+		function plusSlides2(x) {
+			showSlides2((shopSlideIndex += x));
+		}
+
+		function currentSlide2(x) {
+			showSlides2((shopSlideIndex = x));
+		}
+
+		function showSlides2(x) {
+			var i;
+			var shopSlides = document.getElementsByClassName("bigShop");
+			if (x > shopSlides.length) {
+				shopSlideIndex = 1;
 			}
-
-			function currentSlide2(x) {
-				showSlides2((shopSlideIndex = x));
+			if (x < 1) {
+				shopSlideIndex = shopSlides.length;
 			}
-
-			function showSlides2(x) {
-				var i;
-				var shopSlides = document.getElementsByClassName("bigShop");
-				if (x > shopSlides.length) {
-					shopSlideIndex = 1;
-				}
-				if (x < 1) {
-					shopSlideIndex = shopSlides.length;
-				}
-				for (i = 0; i < shopSlides.length; i++) {
-					shopSlides[i].style.display = "none";
-				}
-				shopSlides[shopSlideIndex - 1].style.display = "block";
+			for (i = 0; i < shopSlides.length; i++) {
+				shopSlides[i].style.display = "none";
 			}
+			shopSlides[shopSlideIndex - 1].style.display = "block";
+		}
 	</script>
 </body>
 

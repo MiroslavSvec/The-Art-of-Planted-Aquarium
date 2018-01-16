@@ -156,7 +156,7 @@ img {
 	background-image: url("../Files/5.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-radius: 50%;	
+	border-radius: 50%;
 }
 h4 {
 	position: absolute;
@@ -193,12 +193,12 @@ h4 {
 }
 
 /* Shop section */
-
 #shop {
-	height: 1300px;
+	height: 1100px;
 }
 #shopWrapper {
 	width: 100%;
+	height: 100%;
 	padding: 0 20px;
 }
 #bigShopWrapper {
@@ -211,10 +211,10 @@ h4 {
 }
 .bigShop {
 	display: none;
-}
-.bigShop a {
-	opacity: 1;
 	position: relative;
+}
+.bigShop a, smallShop a {
+	opacity: 1;
 	display: block;
 	width: 100%;
 	height: 700px;
@@ -222,19 +222,44 @@ h4 {
 	background-position: center;
 	background-repeat: no-repeat;
 } 
-#smallShop {
-	height: 500px;
+.bigShop div {
+	position: absolute;
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
+	padding: 50px;
+	top: 15%;
+	left: 50%;
+}
+#aligLeft div {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 50px;
+	top: 15%;
+	left: 0%;
+	right: 50%;
+}
+.bigShop div h5 {		
+	font-size: 4em;
+	color: #c00000;
+}
+.bigShop div p {
+	padding-top: 40px;	
+	width: 50%;	
+}
+#smallShop {
+	display: flex;
+	align-content: flex-start;
 	margin-top: 20px;
 }
-#smallShop {
-	height: 200px;
-}
 #smallShop a {
-	flex-basis: 30%;
-	padding: 50px;
+	height: 200px;
+	flex-basis: 40%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 
@@ -271,5 +296,8 @@ h5 {
 
 div, a {
 	border: 5px solid black;
+}
+.grid li:hover {
+	box-shadow: 10px 10px 10px #a6a6a6;
 }
 
