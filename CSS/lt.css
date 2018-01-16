@@ -1,5 +1,13 @@
 section {
-	display: block;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
+}
+
+
+
+
+/* NOT IN USE *
+
+div, a {
+	border: 5px solid black;
 }

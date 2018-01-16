@@ -1,3 +1,9 @@
+
+#contentWrapper {
+	width: 100%;
+	height: auto;
+}
+
 /* Header Rules */
 
 header {
@@ -20,7 +26,6 @@ nav a {
 
 #slideShow {
 	height: 825px;
-	margin-top: 50px;
 	display: block;
 	padding: 0px;
 }
@@ -91,7 +96,6 @@ img {
 
 /* Introduction section */
 
-#introduction,
 #introductionWrapper {
 	width: 100%;
 	padding: 0 20px;
@@ -171,8 +175,8 @@ h4 {
 }
 
 /* Shop section */
+
 #shop {
-	height: 1100px;
 	width: 100%;
 	padding: 0 20px;
 }
@@ -239,6 +243,9 @@ h4 {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-clip: content-box;
+	margin-top: 20px;
+	padding: 20px;
 }
 
 
