@@ -101,13 +101,13 @@ img {
 
 .box {
 	display: block;
+	-webkit-transition: width 2s, height 2s;
+	-moz-transition: width 2s, height 2s;
+	transition: width 2s, height 2s; /* Not good stil */
 }
 .box:hover {
 	width: 200px;
-	height: 200px;
-	-webkit-transition: width 2s, height 2s;
-	-moz-transition: width 2s, height 2s;
-	transition: width 2s, height 2s;			
+	height: 200px;		
 }
 
 		
